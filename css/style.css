@@ -1,0 +1,136 @@
+/* 页面基础色 */
+body {
+  background-color: #0F0F0F;
+  color: #E0E0E0;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+header {
+  text-align: center;
+  padding: 2rem;
+  background: linear-gradient(90deg, #00FFC6, #00B8A9);
+  color: #0F0F0F;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+main {
+  padding: 2rem;
+}
+
+/* 卡片风格内容块 */
+.section {
+  background-color: #1A1A1A;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,255,198,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 900px;
+}
+
+.section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 30px rgba(0,255,198,0.2);
+}
+
+.section h2 {
+  color: #00FFC6;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.section p, .section ul {
+  color: #E0E0E0;
+  line-height: 1.6;
+}
+
+/* 图片 */
+.tech-image {
+  display: block;
+  max-width: 100%;
+  margin: 1rem auto;
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(0,255,198,0.3);
+  transition: transform 0.3s ease;
+}
+
+.tech-image:hover {
+  transform: scale(1.03);
+}
+
+/* 图片详情 */
+.image-details {
+  display: none;
+  background-color: #2C2C2C;
+  color: #FFD700;
+  padding: 1rem;
+  border-radius: 10px;
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #1A1A1A;
+  color: #888;
+}
+
+/* 横向滑动科学家区 */
+.scientist-carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 1.5rem;
+  padding: 1rem;
+}
+
+.scientist-card {
+  flex: 0 0 auto;
+  width: 300px;
+  scroll-snap-align: start;
+  background-color: #222;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 2px 12px rgba(0,255,198,0.2);
+}
+
+.scientist-card h3 {
+  color: #00FFC6;
+}
+
+.scientist-card p {
+  font-size: 0.9rem;
+}
+
+.toggle-block h3 {
+  cursor: pointer;
+  background-color: #00FFC6;
+  color: #0F0F0F;
+  padding: 0.75rem;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+  margin-top: 1rem;
+}
+
+.toggle-block h3:hover {
+  background-color: #00ccaa;
+}
+
+.answer {
+  display: none;
+  margin-top: 0.5rem;
+  padding: 0.75rem;
+  background-color: #1A1A1A;
+  border-left: 4px solid #FFD700;
+  border-radius: 6px;
+  color: #E0E0E0;
+}
